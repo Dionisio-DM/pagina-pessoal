@@ -1,5 +1,5 @@
 const cardBtn = document.getElementById("card-btn");
-const card = document.querySelector(".card")[0];
+const card = document.querySelector(".card");
 
 const submitForm = document.getElementById("form");
 const nameInput = document.getElementById("name");
