@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Página Pessoal</title>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <ul>
+          <li><a class="nav-link" href="#about-me">Sobre mim</a></li>
+          <li><a class="nav-link" href="#hobbies">Hobbies</a></li>
+          <li><a class="nav-link" href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about-me">
+        <h1>Olá, me chamo Dionísio</h1>
+        <h2>Um Desenvolvedor e eu...</h2>
+        <div class="card">
+          <p>
+            Sou graduando no curso de engenharia de telecomunicações pelo
+            Instituto Federal do Ceará (IFCE), sempre motivado pela curiosidade,
+            procuro conhecimento e experiência por onde vou. Busco oportunidades
+            no mercado de trabalho, deste modo poderei me empenhar ainda mais na
+            minha busca de conhecimentos práticos, sempre me mantendo atualizado
+            acerca das tecnologias e modos de utilizá-la.
+          </p>
+        </div>
+        <img
+          src="./img/arrow-down-sign-to-navigate.png"
+          alt="botão seta"
+          id="card-btn"
+        />
+      </section>
+      <section id="hobbies">
+        <h3>O que faço no meu tempo livre:</h3>
+        <div id="hobbies-grid">
+          <div class="hobbie-tile">
+            <img src="./img/books.jpg" class="hobbie-img" />
+            <p>Ler livros</p>
+          </div>
+
+          <div class="hobbie-tile">
+            <img src="./img/cook.jpg" class="hobbie-img" />
+            <p>Cozinhar</p>
+          </div>
+
+          <div class="hobbie-tile">
+            <img src="./img/gym.jpg" class="hobbie-img" />
+            <p>Malhar</p>
+          </div>
+
+          <div class="hobbie-tile">
+            <img src="./img/origami.jpg" class="hobbie-img" />
+            <p>Origami</p>
+          </div>
+
+          <div class="hobbie-tile">
+            <img src="./img/terrarium.jpg" class="hobbie-img" />
+            <p>Jardinagem e terrários</p>
+          </div>
+
+          <div class="hobbie-tile">
+            <img src="./img/video-game.jpg" class="hobbie-img" />
+            <p>Jogar vídeo game</p>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <h1>Quer saber mais?</h1>
+        <h2>Envie uma mensagem</h2>
+        <form id="form" action="formulario" method="post">
+          <label for="name" id="name-label">Nome:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="input-format"
+            placeholder="Insira seu nome"
+            required
+          />
+
+          <label for="email" id="email-label">Email:</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            class="input-format"
+            placeholder="Seu melhor e-mail"
+            required
+          />
+
+          <label for="message" id="message-label">Menssagem</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            class="input-format"
+            placeholder="Escreva a mensagem aqui..."
+            required
+          ></textarea>
+          <button type="submit" id="submit-btn">Enviar!</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
