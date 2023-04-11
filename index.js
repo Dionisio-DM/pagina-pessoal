@@ -51,5 +51,5 @@ submitForm.addEventListener("submit", async (e) => {
   })
     .then((resp) => resp.json())
     .then((json) => console.log(JSON.stringify(json)))
-    .catch((e) => console.log(e));
+    .catch((e) => console.log("Erro:", e));
 });
