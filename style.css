@@ -62,17 +62,6 @@ label {
   padding-top: 10px;
 }
 
-/*
-input[type="text"],
-textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-}
-*/
-
 button[type="submit"] {
   background-color: #09814a;
   color: #fff;
